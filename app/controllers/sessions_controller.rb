@@ -6,7 +6,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-  #  binding.pry
     if sets_session_name
       redirect_to '/'
     else
