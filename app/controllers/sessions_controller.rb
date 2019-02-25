@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
   #    session[:name] = params[:name]
   #        @name = session[:name]     #sets_session_name
   #    redirect_to '/'
-    end
+  #  end
   end
 
   def destroy
