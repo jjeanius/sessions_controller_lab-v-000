@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   def create
       session[:username] = params[:username]	  #  binding.pry
       session[:name] = params[:name]
-    
+
   #  if !params[:name] =" " || !params[:name] = nil
   #    redirect_to '/sessions/new'
   #  elsif
