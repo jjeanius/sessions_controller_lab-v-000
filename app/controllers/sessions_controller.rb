@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
   def create
     if params[:name] =" " || params[:name] = nil
       redirect_to '/sessions/new'
-    elsif     
+    elsif
       sets_session_name
         redirect_to '/'
     end
