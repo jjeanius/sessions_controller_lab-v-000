@@ -7,7 +7,9 @@ class ApplicationController < ActionController::Base
 
   def sets_session_name
     if session[:name] = params[:name]
-        @name = session[:name]
+      name = params[:name]
+      name = session[:name]
+        @name = name
     end
   end
 
