@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
     if sets_session_name
       redirect_to '/'
     elsif
+      params[:name] =" " || params[:name] = nil
       !!session[:name] = !params[:name]
       redirect_to '/sessions/new'
   #  elsif
