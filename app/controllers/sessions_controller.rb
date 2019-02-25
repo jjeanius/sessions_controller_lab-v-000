@@ -6,14 +6,15 @@ class SessionsController < ApplicationController
   end
 
   def create
-
+    if sets_session_name
+      redirect_to '/'
+    else
       !!session[:name] = !params[:name]
       redirect_to '/sessions/new'
   #  elsif
   #    session[:name] = params[:name]
   #        @name = session[:name]     #sets_session_name
-  #    redirect_to '/'
-  #  end
+    end
   end
 
   def destroy
