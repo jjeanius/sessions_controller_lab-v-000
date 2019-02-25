@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
   #  elsif
       sets_session_name
         redirect_to '/'
-    end
+  #  end
   end
 
   def destroy
