@@ -6,7 +6,8 @@ class ApplicationController < ActionController::Base
   helper_method :sets_session_name
 
   def sets_session_name
-    if session[:name] = params[:name]
+    if params[:name]!="" || params[:name]!=nil
+      session[:name] = params[:name]
       name = params[:name]
       name = session[:name]
         @name = name
